@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -251,10 +252,17 @@ body {
   border: 1px solid #ddda81;
   background-color: #ddda81;
   margin-right: 25px;
+  margin-left: 50px;
 }
 .hero-content .hero-text h1 {
   font-size: 48px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.hero-content .hero-text h1 span {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px #fff;
+  font-family: "Poppins", sans-serif;
 }
 .hero-content .date {
   max-width: 200px;

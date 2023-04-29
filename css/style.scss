@@ -32,15 +32,16 @@ body {
   background-color: #00000000;
   position: relative;
 
- 
+
   .nav-bar {
-   width: 100vw;
+    width: 100vw;
     height: 7%;
     background-color: rgba(232, 255, 179, 0.221);
     display: flex;
     align-items: center;
     justify-content: space-between;
-   position: fixed;
+    position: fixed;
+    z-index: 9999;
 
     .nav-logo {
       span {
@@ -66,12 +67,12 @@ body {
             color: #000;
 
             transition: all ease-in-out .5s;
-            
-              &:hover {
-                letter-spacing: 3px;
-                transition: all ease-in-out 0.5s;
-                color: rgb(188, 252, 154);
-              }
+
+            &:hover {
+              letter-spacing: 3px;
+              transition: all ease-in-out 0.5s;
+              color: rgb(188, 252, 154);
+            }
           }
         }
       }
@@ -89,12 +90,12 @@ body {
           font-size: 14px;
           transition: all ease-in-out .5s;
           color: #000;
-          
-            &:hover {
-              letter-spacing: 3px;
-              transition: all ease-in-out 0.5s;
-              color: rgb(252, 226, 154);
-            }
+
+          &:hover {
+            letter-spacing: 3px;
+            transition: all ease-in-out 0.5s;
+            color: rgb(252, 226, 154);
+          }
         }
       }
     }
@@ -245,7 +246,76 @@ body {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 30%;
+  transform: translateY(50%);
+  position: relative;
+
+
+  .social-links {
+    padding: 10px;
+    margin-left: 10px;
+
+    background: rgba(255, 255, 255, 0.779);
+    // border: 1px solid #f7f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+    z-index: -1;
+
+
+    ul {
+      li {
+        list-style: none;
+        font-size: 16px;
+        margin: 4px 0px;
+
+        .svg-inline--fa {
+          height: 26px;
+          // background-color: linear-gradient(90deg, rgba(255, 37, 10, 1) 0%, rgba(251, 246, 139, 1) 45%, rgba(91, 255, 0, 1) 100%);
+          color: #000000;
+        }
+
+      }
+    }
+
+
+  }
+
+  .hero-text {
+    h5 {
+      color: #ddda81;
+      font-size: 18px;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        width: 55px;
+        height: 3px;
+        border: 1px solid #ddda81;
+        background-color: #ddda81;
+        margin-right: 25px;
+
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #fff;
+    }
+  }
+
+  .date {
+    max-width: 200px;
+    border: 1px solid black;
+    background: #31f7f037;
+  }
+}
 
 // -------------------------------------------------------
 

@@ -38,6 +38,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 9999;
 }
 .hero .nav-bar .nav-logo span {
   margin-left: 20px;
@@ -208,6 +209,57 @@ body {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 30%;
+  transform: translateY(50%);
+  position: relative;
+}
+.hero-content .social-links {
+  padding: 10px;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.779);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+  z-index: -1;
+}
+.hero-content .social-links ul li {
+  list-style: none;
+  font-size: 16px;
+  margin: 4px 0px;
+}
+.hero-content .social-links ul li .svg-inline--fa {
+  height: 26px;
+  color: #000000;
+}
+.hero-content .hero-text h5 {
+  color: #ddda81;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+.hero-content .hero-text h5 span {
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  border: 1px solid #ddda81;
+  background-color: #ddda81;
+  margin-right: 25px;
+}
+.hero-content .hero-text h1 {
+  font-size: 48px;
+  color: #fff;
+}
+.hero-content .date {
+  max-width: 200px;
+  border: 1px solid black;
+  background: rgba(49, 247, 240, 0.2156862745);
 }
 
 .about {

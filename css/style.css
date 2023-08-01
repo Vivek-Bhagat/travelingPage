@@ -64,7 +64,7 @@ body {
 .hero .nav-bar .nav-items ul li a:hover {
   letter-spacing: 3px;
   transition: all ease-in-out 0.5s;
-  color: rgb(188, 252, 154);
+  color: rgb(3, 59, 17);
 }
 .hero .nav-bar .nav-links li {
   list-style: none;
@@ -75,13 +75,14 @@ body {
   text-decoration: none;
   font-family: "Bruno Ace", cursive;
   font-size: 14px;
+  font-weight: 600;
   transition: all ease-in-out 0.5s;
   color: #000;
 }
 .hero .nav-bar .nav-links li a:hover {
   letter-spacing: 3px;
   transition: all ease-in-out 0.5s;
-  color: rgb(252, 226, 154);
+  color: rgb(3, 59, 17);
 }
 .hero .nav-bar .hamburger-menu {
   background-color: transparent;
@@ -264,10 +265,17 @@ body {
   -webkit-text-stroke: 1px #fff;
   font-family: "Poppins", sans-serif;
 }
-.hero-content .date {
+.hero-content .new-date {
   max-width: 200px;
   border: 1px solid black;
-  background: rgba(49, 247, 240, 0.2156862745);
+  background: rgba(238, 244, 244, 0.6156862745);
+  filter: blur(100%);
+}
+.hero-content .new-date .date {
+  padding: 10px 6px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #ddda81;
 }
 
 .about {

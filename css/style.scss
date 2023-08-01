@@ -73,7 +73,7 @@ body {
             &:hover {
               letter-spacing: 3px;
               transition: all ease-in-out 0.5s;
-              color: rgb(188, 252, 154);
+              color: rgb(3, 59, 17);
             }
           }
         }
@@ -90,13 +90,14 @@ body {
           text-decoration: none;
           font-family: "Bruno Ace", cursive;
           font-size: 14px;
+          font-weight: 600;
           transition: all ease-in-out .5s;
           color: #000;
 
           &:hover {
             letter-spacing: 3px;
             transition: all ease-in-out 0.5s;
-            color: rgb(252, 226, 154);
+            color: rgb(3, 59, 17);
           }
         }
       }
@@ -311,18 +312,27 @@ body {
       font-size: 48px;
       color: #eff3e8;
       font-family: 'Poppins', sans-serif;
-       span{
+
+      span {
         -webkit-text-fill-color: #ffffff00;
-          -webkit-text-stroke: 1px #fff;
-          font-family: 'Poppins', sans-serif;
-       }
+        -webkit-text-stroke: 1px #fff;
+        font-family: 'Poppins', sans-serif;
+      }
     }
   }
 
-  .date {
+  .new-date {
     max-width: 200px;
     border: 1px solid black;
-    background: #31f7f037;
+    background: #eef4f49d;
+    filter: blur(100%);
+
+    .date{
+      padding: 10px 6px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px;
+      color: #ddda81;
+    }
   }
 }
 
